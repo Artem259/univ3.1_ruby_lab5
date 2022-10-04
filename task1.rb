@@ -23,26 +23,3 @@ def trp(a, b, function, n)
   end
   res * h
 end
-
-#------------------------------------------------------------#
-
-def sin(x)
-  Math.sin(x)
-end
-
-def f1(x)
-  (x**2 - 1) * 10**(-2*x)
-end
-
-def f2(x)
-  x * Math.atan(x)
-end
-
-#------------------------------------------------------------#
-
-if __FILE__ == $0
-  print "\nF1 Prm: ", prm(0,0.4,"f1", 10000)
-  print "\nF1 Trp: ", trp(0,0.4,"f1", 10000)
-  print "\nF2 Prm: ", prm(0,1.7,"f2", 10000)
-  print "\nF2 Trp: ", trp(0,1.7,"f2", 10000), "\n"
-end
