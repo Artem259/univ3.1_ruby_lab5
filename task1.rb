@@ -40,7 +40,9 @@ end
 
 #------------------------------------------------------------#
 
-print "\nF1 Prm: ", prm(0,0.4,"f1", 10000)
-print "\nF1 Trp: ", trp(0,0.4,"f1", 10000)
-print "\nF2 Prm: ", prm(0,1.7,"f2", 10000)
-print "\nF2 Trp: ", trp(0,1.7,"f2", 10000), "\n"
+if __FILE__ == $0
+  print "\nF1 Prm: ", prm(0,0.4,"f1", 10000)
+  print "\nF1 Trp: ", trp(0,0.4,"f1", 10000)
+  print "\nF2 Prm: ", prm(0,1.7,"f2", 10000)
+  print "\nF2 Trp: ", trp(0,1.7,"f2", 10000), "\n"
+end
