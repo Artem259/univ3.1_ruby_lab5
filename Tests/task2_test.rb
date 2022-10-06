@@ -22,4 +22,10 @@ class Test_task_2 < Minitest::Test
     assert_equal 0.793726, function2(0.4,50).round(6)
     assert_equal 0.775085, function2(0.7,31).round(6)
   end
+
+=begin
+  def test_4
+    assert_equal 0.7854, function2(0.4,-1).round(4)
+  end
+=end
 end
