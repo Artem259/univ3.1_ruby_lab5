@@ -19,20 +19,3 @@ def function2(x, n)
   end
   result
 end
-
-if __FILE__ == $0
-  print 'Enter x n values (space-separated):'
-  str = gets
-  exit if str.nil? || str.empty?
-  str.chomp!
-  x, n = str.split(' ')
-  x, n = x.to_f, n.to_i
-  print "\nInput:\n x = #{x}\n n = #{n}\n\n"
-
-  res = function2(x, n)
-  if res.nil?
-    print "Error! Parameters out of range.\n"
-  else
-    print "Result is ", res, "\n"
-  end
-end
